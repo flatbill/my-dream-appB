@@ -38,29 +38,32 @@
   </div>
   <!-- /////////////////////////////////////////////// -->
   <div class='m2 cp09'>dipper
+      <!-- <div [ngClass]=setCg3Class()>fango3  </div> duzt work gives value changed error-->
     <div class='cgCon3'>      
-      <span class='x1'>col1</span>
-      <span class='x2'>col2</span>
-      <span class='x3'>col3</span>
-      <span class='x4'>col4</span>
-      <span class='y1 yv'>row1</span>
-      <span class='y2 yv'>row2</span>
-      <span class='y3 yv'>row3</span>
-      <span class='y4 yv'>row4</span>
-      <span class='xx'> </span>
+      <span class='x1'>slot1</span>
+      <span class='x2'>slot2</span>
+      <span class='x3'>slot3</span>
+      <span class='x4'>slot4</span>
+      <span class='y1 yv'>Line1</span>
+      <span class='y2 yv'>Line2</span>
+      <span class='y3 yv'>Line3</span>
+      <span class='y4 yv'>Line4</span>
+      <span class='xx'></span>
 
-      <span *ngFor = 'let x of cg3Array'>
-          <!-- <span *ngIf= x.lineMark  class='y1'> {{x.ix}}</span> -->
 
-          <span class='aa myBox1'>
+      <span *ngFor = 'let x of cg3Array'> 
+          <!-- <span *ngIf= x.LineMark  class='y1'> {{x.ix}}</span>  -->
+          <span class='aa'>     
+            <!-- I wish I could make aa a variable class aa1 aa3 aa3  -->
+            <span class='bx1'>
              sir 
-             {{x.dude}}
-             
-          </span>
-      </span>
+             {{x.dude}}             
+            </span>
+        </span>
+      </span> 
     </div>
   </div>
-  //////////////////////////////////////////////
+  <!-- ////////////////////////////////////////////// -->
 	<div class='m3 cp10'>ripper</div>
 </div>
 

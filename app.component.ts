@@ -11,6 +11,10 @@ export class AppComponent implements OnInit {
   submit1ButtonText: string = ' submit now ';
   n2Hoo:string = 'n2 Hoo Text';
   cg3Array = [];
+  aaClassNbr = 0;
+  aaClassName = 'aa1';
+  fooBarArray = ['foo','bar']
+  rooVar = 'roovoodoo';
   
   ngOnInit(){
    this.initArrays();
@@ -47,9 +51,9 @@ export class AppComponent implements OnInit {
     {ix: 0, lineMark: false, dude: 'Core', age: 27, size: 13},
     {ix: 0, lineMark: false, dude: 'Corn', age: 27, size: 13},
     {ix: 0, lineMark: false, dude: 'Lery', age: 27, size: 13},
-    {ix: 0, lineMark: false, dude: 'Bill', age: 27, size: 13},
+    {ix: 0, lineMark: false, dude: 'Bill Selzer III', age: 27, size: 13},
     {ix: 0, lineMark: false, dude: 'Eddy', age: 27, size: 13},
-    {ix: 0, lineMark: false, dude: 'Rico', age: 27, size: 13},
+    {ix: 0, lineMark: false, dude: 'Rico Balikof', age: 27, size: 13},
     {ix: 0, lineMark: false, dude: 'Cany', age: 27, size: 13},
     {ix: 0, lineMark: false, dude: 'Till', age: 27, size: 13},
     {ix: 0, lineMark: false, dude: 'Samy', age: 27, size: 13},
@@ -72,8 +76,16 @@ export class AppComponent implements OnInit {
     }
   }
  
-
-
  } // End of initArrays
 
+ 
+ setCg3Class() {
+  alert('running setCg3Class')
+  this.aaClassNbr = this.aaClassNbr + 1
+  this.aaClassName = 'aa' + this.aaClassNbr.toString()
+  this.aaClassName = 'aa1'
+   if (this.aaClassNbr > 1){return('foojoo')}
+  return(this.aaClassName);
+  
+  }
 }
