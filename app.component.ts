@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   title: string = 'my-dream-app flynewsky';
-  submit1ButtonText: string = ' submit ';
+  submit1ButtonText: string = ' submit now ';
   n2Hoo:string = 'n2 Hoo Text';
   cg3Array = [];
   
