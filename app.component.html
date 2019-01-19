@@ -1,0 +1,63 @@
+ 
+
+<div class='cgCon1'>
+	<span class='n1 cp04'> 
+    <span>sell yourself</span>    
+    <label for="fullName" id='labelFullName'>what is your name?</label>
+    <input type="text" id="fullName" autofocus >
+    <label for="astrosign" id='labelAstroSign'>what is your sign?</label>
+    <input type="text" id="astroSign"  >
+    <button (click) ='onSubmit1Click()' class='but1 cp28'>{{submit1ButtonText}}</button>
+    
+	</span>
+	<span class='n2 cp05' id='n2Id'>
+     <span>{{n2Hoo}}</span>
+     <!-- <span>the cat's in the cradle and the silver spoon</span> -->
+  </span>
+  <span class='n3 cp06'>
+      <span>n3 roo</span>
+      <button  (click) = 'onTog1Click()'  > Toggle n2 on/off  </button>
+      <button (click) = 'onTog2()'> Tog2 </button>
+
+  </span>
+  <div class='m1 cp07'> chipper
+    <ul > 
+      <li class='cgCon2 liHead1 cp08' >moo <span>zoo</span> noo boo loo</li>
+      <li class='cgCon2'>ramp zillow <button>button Up</button> foofoo far far</li>
+      <li class='cgCon2'>I have a head butt <button>fear the button</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>button down</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>but but but</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>call me crazy</button>noonoo</li>
+      <!-- <li class='cgCon2'>I have a head butt <button>call me crazy</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>call me crazy</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>call me crazy</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>call me crazy</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>call me crazy</button>noonoo</li>
+      <li class='cgCon2'>I have a head butt <button>call me crazy</button>noonoo</li> -->
+    </ul>
+  </div>
+  ///////////////////////////////////////////////
+  <div class='m2 cp09'>dipper
+    <div class='cgCon3'>
+      <span class='xx'>xx</span>
+      <span class='x1'>col1</span>
+      <span class='x2'>col2</span>
+      <span class='x3'>col3</span>
+      <span class='x4'>col4</span>
+      <span class='y1'>row1</span>
+      <span class='y2'>row2</span>
+      <span class='y3'>row3</span>
+      <span class='y4'>row4</span>
+
+      <span *ngFor = 'let x of cg3Array'>
+          <!-- <span *ngIf= x.lineMark  class='y1'> {{x.ix}}</span> -->
+
+          <span class='aa'> {{x.dude}}</span>
+      </span>
+    </div>
+  </div>
+  //////////////////////////////////////////////
+	<div class='m3 cp10'>ripper</div>
+</div>
+
+
